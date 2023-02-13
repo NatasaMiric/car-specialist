@@ -75,8 +75,21 @@ The color scheme is chosen based on some car service website designs founded on 
 
 ## Technologies Used
 ### Languages
+
+* Python version 3.8.11 - the main language used to build the back-end.
+* HTML- markup language used to build the front-end templates.
+* CSS- to style the content and provide the layout.
+
 ### Frameworks-Libraries-Programs
 
+* Django - Python-based web framework that follows the model–template–views architectural pattern.
+* Cloudinary -  for cloud-based image and video management services
+* PostreSQL - used as database management system
+* GitHub - project repository
+* Gitpod - version control
+* Heroku - cloud platform for deployment, managemant, and scaling the app
+* ElephantSQL - PostgreSQL database hosting service.
+* Code Institute GitPod Full Template - Using the GitPod Full Template from the Code Institute for my project.
 ## Testing
 ### Manual testing
 ### Validator testing
@@ -163,17 +176,11 @@ The sqlite3 database was used in development, however this is only available for
   38. Deploy Content manually through Heroku (Github as deployment method,enable automatic deployments,deploy on main branch)
 
 
-  
-
-
-
-
-
-
-
-  
-
-
 ## Credits
 ### Content 
+
 ### Media
+
+The color scheme was inspired by these HTML template design: 
+(https://creativemarket.com/etheme2/2938419-Car-Repair-Service-HTML-Template?u=ohlove&epik=dj0yJnU9SWlrRHhZOFctOENiQlBwaUN5MTd3YmU3Um1IZ0JiOGQmcD0wJm49M2JlSllfdGxQQjlsUXZTTzNrSGo1USZ0PUFBQUFBR1BnMUo4)
+
