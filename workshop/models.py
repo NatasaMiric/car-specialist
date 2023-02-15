@@ -28,12 +28,12 @@ AVAILABLE_TIME = (
 class Booking(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE,
                                  related_name="user_bookings")
-    phone_number = models.CharField(max_length=12)
+    phone_number = models.CharField(max_length=12, blank=False, null=False)
     service_type = models.CharField(max_length=50, choices=SERVICE_TYPE,
-                                    default='')
-    day = models.DateField(default=datetime.now)
+                                    blank=False, null=False, default='')
+    day = models.DateField(default=datetime.now, blank=False, null=False)
     time = models.CharField(max_length=15, choices=AVAILABLE_TIME,
-                            default='8:00am-9:00am')
+                            blank=False, null=False, default='8:00am-9:00am')
     comment = models.TextField(max_length=250)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)

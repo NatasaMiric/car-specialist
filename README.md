@@ -65,7 +65,7 @@ The color scheme is chosen based on some car service website designs founded on 
 
 [Google Fonts](https://fonts.google.com/) was used for the following fonts: 
   * Racing Sans One for the headings on the website.
-  * Source Sans Pro for the body text on the website. 
+  * Roboto for the body text on the website. 
 
 ### Agile methodology
 
