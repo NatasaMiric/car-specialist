@@ -23,8 +23,12 @@ class BookingView(CreateView):
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
-        if form.is_valid():            
-            form.save()
-            return redirect('index.html')
+        if form.is_valid():       
+            new_form = form.save(commit=False)
+            new_form.user = request.user
+            new_form.save()
+            return redirect('home')
+        else:
+            print(form.errors)
 
         return render(request, self.template_name, {'form': form})

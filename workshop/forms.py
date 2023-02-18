@@ -7,12 +7,9 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
 
-        fields = ('user', 'phone_number', 'service_type', 'day', 'time',
+        fields = ('phone_number', 'service_type', 'day', 'time',
                   'comment')
         widgets = {
-            'user': forms.TextInput(attrs={'class': 'form-control',
-                                    'style': 'width: 300px;'
-                                    }),
             'phone_number': forms.TextInput(attrs={'class': 'form-control',
                                                    'style': 'width: 300px;'
                                                    }),
@@ -22,7 +19,4 @@ class BookingForm(forms.ModelForm):
             'comment': forms.Textarea(attrs={'class': 'form-control',
                                       'placeholder': 'Describe your case here'}
                                       )
-        }
-        labels = {
-            'user': 'Full Name'
         }

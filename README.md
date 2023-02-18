@@ -96,6 +96,9 @@ The color scheme is chosen based on some car service website designs founded on 
 ### Testing user Stories
 ### Bugs
 
+* The submission of booking form did not work, it was not saved to database and it reported an error message about a field in the form. The error is fixed by removing the 'user' from the form fields and instead user data will be automatically retrieved when he loggs in.  
+
+
 ## Deployment
 
 The project is deployed using Heroku. To deploy the project:
