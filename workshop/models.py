@@ -4,7 +4,7 @@ from datetime import datetime
 
 SERVICE_TYPE = (
     ('Vehicle Diagnostics', 'Vehicle Diagnostics'),
-    ('Start and charging system repairs', 'Start and charging system repairs'),
+    ('Starting and charging system repairs', 'Start and charging system repairs'),
     ('Replacement of light bulbs', 'Replacement of light bulbs'),
     ('AC service', 'AC service'),
     ('Clutch replacement', 'Clutch replacement'),
@@ -26,8 +26,8 @@ AVAILABLE_TIME = (
 
 
 class Booking(models.Model):
-    customer = models.ForeignKey(User, on_delete=models.CASCADE,
-                                 related_name="user_bookings")
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name="user_bookings")
     phone_number = models.CharField(max_length=12, blank=False, null=False)
     service_type = models.CharField(max_length=50, choices=SERVICE_TYPE,
                                     blank=False, null=False, default='')
@@ -43,4 +43,4 @@ class Booking(models.Model):
         ordering = ['created_on']
 
     def __str__(self):
-        return f"{self.customer} | day: {self.day} | time: {self.time}"
+        return f"{self.user} | day: {self.day} | time: {self.time}"
