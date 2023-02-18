@@ -1,0 +1,19 @@
+body {
+    font-family: Roboto,sans-serif;
+}
+
+
+.navbar-brand {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 180%;
+    color: #fae000;
+}
+
+.nav-first-line {    
+    color: white;
+    font-size: 14px;
+}
+
+.btn-warning{
+    background-color: #fae000;
+}
