@@ -1,19 +1,63 @@
 body {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto,sans-serif;    
 }
 
-
+p {
+    font-size: 120%;
+}
 .navbar-brand {
     font-family: 'Racing Sans One', sans-serif;
     font-size: 180%;
     color: #fae000;
+    margin-left: 1rem;
 }
 
 .nav-first-line {    
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.btn-warning{
+.btn-warning {
     background-color: #fae000;
 }
+
+.btn-warning:hover {
+    color: white;
+    background:transparent;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.section-heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page-section {
+    padding: 2rem;
+}
+
+
+.about-section {
+    line-height: 45px;
+}
+
+.fa-check-circle{
+    color: #fae000;   
+}
+
+
+.btn-read-more {
+    margin-top: 2em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+

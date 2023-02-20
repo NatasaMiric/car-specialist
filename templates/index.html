@@ -1,5 +1,98 @@
 {% extends "base.html" %}
 
+{% load static %}
 {% block content %}
+<header class="bg-dark py-5" style="background-image: url();">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Make your car last longer</h1>
+                    <p class="lead text-white-50 mb-4">We perform car service and car repairs on all car brands</p>
+                    <div class="text-center">
+                        <a class="btn btn-warning btn-lg" href="{% url 'booking' %}">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Services-->
+<section class="page-section">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="section-heading text-capitalize">Our Services</h2>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x text-secondary"></i>
+                    <i class="fas fa-car fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Vehicle Diagnostics</h4>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x text-secondary"></i>
+                    <i class="fas fa-car-battery fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Start and Charging System Repairs</h4>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x text-secondary"></i>
+                    <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Basic and Big service</h4>
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col mt-2">
+                <a href="{% url 'services' %}" class="btn btn-outline-dark">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About us-->
+<section class="page-section bg-dark about-section">
+    <div class="container">
+        <div class="row text-white">
+            <h2 class="section-heading text-center text-capitalize">About us</h2>
+        </div>
+        <div class="row text-center text-white pb-5">
+            <h4>Welcome to Car Specialist!</h4>
+            <p>Are you interested in a fast car service in the center of London with experienced car mechanics? Do you
+                want to avoid the long waiting time for the service? Then turn to us.</p>
+            <p>In our well-equipped car workshop, we carry out all kinds of car repairs and car services for all brands.
+            </p>
+            <p>Here, we usually take care of the car on the same day it arrives. Here, the customer is always in focus.
+                If we find any additional faults with the car, we always consult with the customer first if anything
+                further needs to be fixed.</p>
+        </div>
+        <div class="row text-white">
+            <h3 class="text-center text-md-start text-capitalize">Why choose us</h3>
+        </div>
+        <div class="row text-white">
+            <div class="col-lg-6 order-lg-1 my-auto lead">
+                <ul class="mb-3 list-unstyled">
+                    <li><i class="far fa-check-circle fa-lg"></i> Our workshop is well equipped and accepts all types of
+                        cars</li>
+                    <li><i class="far fa-check-circle fa-lg"></i> Our mechanics are continuously trained to be able to
+                        handle all car models</li>
+                    <li><i class="far fa-check-circle fa-lg"></i> Friendly and correct treatment. We listen to you and
+                        understand your needs</li>
+                    <li><i class="far fa-check-circle fa-lg"></i> Same day service for most repairs and maintenance</li>
+                    <li><i class="far fa-check-circle fa-lg"></i> We get the job done right — the first time</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 order-lg-2">
+                <img src="static/img/about.jpg" alt="car service" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 {%endblock%}
