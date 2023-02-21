@@ -2,9 +2,11 @@ body {
     font-family: Roboto,sans-serif;    
 }
 
+
 p {
     font-size: 120%;
 }
+
 .navbar-brand {
     font-family: 'Racing Sans One', sans-serif;
     font-size: 180%;
@@ -28,6 +30,12 @@ p {
 
 .nav-item:hover {
     text-decoration: underline;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-heading {
