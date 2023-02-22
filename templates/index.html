@@ -1,23 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-<header class="bg-dark bg-image hero" style="background-image: url('{% static 'img/hero.jpg' %}');">
-    <div class="container px-5" >
-        <div class="row gx-5 justify-content-center" >
-            <div class="col-lg-6">
-                <div class="text-center my-5">
-                    <h1 class="display-5 fw-bolder text-white mb-2">Make your car last longer</h1>
-                    <p class="lead text-warning fw-bold mb-4">We perform car service and car repairs on all car brands</p>
-                    <div class="text-center">
-                        <a class="btn btn-warning btn-lg" href="{% url 'booking' %}">Book Now</a>
+<header>
+    <div class="container-fluid bg-dark bg-image hero" style="background-image: url('{% static 'img/hero.jpg' %}')">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-6 fw-bolder text-white mb-2 px-1">Make your car last longer</h1>
+                        <p class="lead text-warning mb-4 px-3">We perform car service and car repairs on all car brands</p>
+                        <div class="text-center">
+                            <a class="btn btn-warning btn-lg mt-4" href="{% url 'booking' %}">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </header>
-
 <!-- Services-->
 <section class="page-section">
     <div class="container">
@@ -75,7 +76,7 @@
             <h3 class="text-center text-md-start text-capitalize pb-3">Why choose us</h3>
         </div>
         <div class="row text-white">
-            <div class="col-lg-6 order-lg-1 my-auto lead">
+            <div class="col-lg-7 order-lg-1 my-auto lead">
                 <ul class="mb-3 list-unstyled text-lg-start">
                     <li><i class="far fa-check-circle fa-lg"></i> Our workshop is well equipped and accepts all types of
                         cars</li>
@@ -87,7 +88,7 @@
                     <li><i class="far fa-check-circle fa-lg"></i> We get the job done right — the first time</li>
                 </ul>
             </div>
-            <div class="col-lg-6 order-lg-2">
+            <div class="col-lg-5 order-lg-2">
                 <img src="{% static 'img/about.jpg' %}" alt="car service" class="img-fluid">
             </div>
         </div>

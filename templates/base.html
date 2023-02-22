@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9b20ffdc75.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Car Specialist</title>
@@ -24,13 +24,13 @@
 
 <body>
     <!-- Navigation -->
-    <div class="container-fluid text-lg-start bg-dark">
-        <div class="row pt-1" >
-            <div class="col col-sm-10 pt-2 text-left">
-                <p><span class="nav-first-line">Opening hours: Monday-Friday 7:00am-4:00pm</span></p>
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 align-items-center">
+            <div class="col col-sm-10 text-left">
+                <span class="text-white-50">Opening hours: Monday-Friday 7:00am-4:00pm</span>
             </div>
-            <div class="col col-sm-2 text-end py-1">
-                <a href="{% url 'booking' %}" class="btn btn-warning btn-sm"><span>Book Now</span> </a>
+            <div class="col col-sm-2 text-center">
+                <a href="{% url 'booking' %}" class="btn btn-warning btn-sm"><span>Book Now</span></a>
             </div>
         </div>
     </div>
@@ -78,8 +78,8 @@
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white" style="background-color: #131313">
-        <div class="container p-4 pb-0">            
-            <section class="">                
+        <div class="container p-4 pb-0">
+            <section class="">
                 <div class="row">
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">
@@ -91,14 +91,14 @@
                             problem.
                         </p>
                     </div>
-                    <hr class="w-100 clearfix d-md-none" />                    
+                    <hr class="w-100 clearfix d-md-none" />
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
                         <p>
                             <a class="link text-white" href="{% url 'home' %}">Home</a>
                         </p>
                         <p>
-                            <a class="link text-white" href="{% url 'services' %}" >Services</a>
+                            <a class="link text-white" href="{% url 'services' %}">Services</a>
                         </p>
                         <p>
                             <a class="link text-white" href="{% url 'booking' %}">Book a service</a>
@@ -106,43 +106,46 @@
                         <p>
                             <a class="link text-white">Contact Us</a>
                         </p>
-                    </div>                 
-                    <hr class="w-100 clearfix d-md-none" />                    
-                    <hr class="w-100 clearfix d-md-none" />                    
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <hr class="w-100 clearfix d-md-none" />
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                         <p><i class="fas fa-home mr-3"></i> London, Main Street 9, UK</p>
                         <p><i class="fas fa-envelope mr-3"></i> carspecialist@gmail.com</p>
                         <p><i class="fas fa-phone mr-3"></i> + 08 447 2345</p>
                         <p><i class="fas fa-clock mr-3"></i> Monday-Friday 7:00am-4:00pm</p>
-                    </div>                    
+                    </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
                         <!-- Facebook -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/"
-                            role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                            href="https://www.facebook.com/" role="button" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
 
                         <!-- Twitter -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/"
-                            role="button" target="_blank"><i class="fab fa-twitter"></i></a>                       
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee"
+                            href="https://twitter.com/" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
 
                         <!-- Instagram -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/"
-                            role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com/" role="button" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
 
                         <!-- Linkedin -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/"
-                            role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>                       
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+                            href="https://www.linkedin.com/" role="button" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>                
-            </section>           
-        </div>   
+                </div>
+            </section>
+        </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2023 Developed by:
             <a class="text-white" href="https://github.com/NatasaMiric/car-specialist" target="_blank">Natasa Miric</a>
-        </div>        
-    </footer>   
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">

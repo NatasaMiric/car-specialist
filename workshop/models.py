@@ -4,7 +4,7 @@ from datetime import datetime
 
 SERVICE_TYPE = (
     ('Vehicle Diagnostics', 'Vehicle Diagnostics'),
-    ('Starting and charging system repairs', 'Start and charging system repairs'),
+    ('Starting and charging system repairs', 'Starting and charging system repairs'),
     ('Replacement of light bulbs', 'Replacement of light bulbs'),
     ('AC service', 'AC service'),
     ('Clutch replacement', 'Clutch replacement'),

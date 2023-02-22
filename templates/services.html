@@ -1,5 +1,68 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
+<header>
+    <div class="container-fluid bg-dark bg-image hero"
+        style="background-image: url('{% static 'img/servicehero.jpg' %}')">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-8 fw-bolder text-white mb-2 px-1">Expert Technicians</h1>
+                        <h1 class="display-8 fw-bolder text-white mb-2 px-1">Competitive Prices</h1>
+                        <div class="text-center">
+                            <a class="btn btn-warning btn-lg mt-4" href="{% url 'booking' %}">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!-- Services-->
+<section class="page-section bg-dark">
+    <div class="container">
+        <div class="row text-white">
+            <h2 class="section-heading text-center text-capitalize">Our Services</h2>
+        </div>
+        <div class="row text-white">
+            <div class="col-lg-7 order-lg-1 my-auto lh-base lead">
+                <p>We offer a full range of garage services to vehicle owners in London. Our professionals know how to
+                    handle a wide range of car services. Whether you drive a passenger car or medium sized truck or SUV,
+                    our mechanics strive to ensure that your vehicle will be performing at its best before leaving our
+                    car shop. We can help you with everything from an oil change to an engine change.</p>
+            </div>
+            <div class="col-lg-5 order-lg-2">
+                <img src="{% static 'img/services1.jpg' %}" alt="car service" class="img-fluid">
+            </div>
+        </div>
+        <div class="row text-white text-uppercase mt-5 gx-5">
+            <h4 class="section-heading text-lg-start">We help you with</h4>
+            <div class="col-lg-6 my-auto">
+                <ul class="mb-3 list-unstyled lh-lg">
+                    <li><i class="fa fa-check fa-2x"></i> Vehicle diagnostics</li>
+                    <li><i class="fa fa-check fa-2x"></i> Electronycal systems repair</li>
+                    <li><i class="fa fa-check fa-2x"></i> Start and Charging System repairs</li>
+                    <li><i class="fa fa-check fa-2x"></i> Basic Service (oil and oil filter change)</li>
+                    <li><i class="fa fa-check fa-2x"></i> Big Service (change of: oil, all filters, brake fluid,
+                        coolant fluid)</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 my-auto lh-lg">
+                <ul class="mb-3 list-unstyled">
+                    <li><i class="fa fa-check fa-2x"></i> Clutch replacement</li>
+                    <li><i class="fa fa-check fa-2x"></i> Cambelt repair</li>
+                    <li><i class="fa fa-check fa-2x"></i> Replacement of light bulbs</li>
+                    <li><i class="fa fa-check fa-2x"></i> AC Service</li>
+                    <li><i class="fa fa-check fa-2x"></i> Tire change and Repair</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 {%endblock%}
