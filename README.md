@@ -83,13 +83,19 @@ The color scheme is chosen based on some car service website designs founded on 
 ### Frameworks-Libraries-Programs
 
 * Django - Python-based web framework that follows the model–template–views architectural pattern.
-* Cloudinary -  for cloud-based image and video management services
+* Cloudinary - for cloud-based image and video management services
 * PostreSQL - used as database management system
 * GitHub - project repository
 * Gitpod - version control
 * Heroku - cloud platform for deployment, managemant, and scaling the app
 * ElephantSQL - PostgreSQL database hosting service.
 * Code Institute GitPod Full Template - Using the GitPod Full Template from the Code Institute for my project.
+* [Font Awesome](https://fontawesome.com/)- used for importing the icons.
+* [Tiny PNG](https://tinypng.com/)- was used to compress images.
+* Balsamiq- was used to create wireframes.
+* [Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
+* Google Dev Tools - to troubleshoot and test features, solve issues with responsiveness and styling
+
 ## Testing
 ### Manual testing
 ### Validator testing
@@ -182,7 +188,17 @@ The sqlite3 database was used in development, however this is only available for
 ## Credits
 ### Content 
 
+Content for the website was taken from: 
+* https://www.johanssoncarservice.se/bilverkstad-stockholm-sodermalm/
+* https://preview.themeforest.net/item/car-service-mechanic-auto-shop-wordpress-theme/full_screen_preview/12777824?_ga=2.233172310.978326925.1675884526-1535900306.1675677744
+
 ### Media
+
+Photos were taken from: 
+* Hero image/home page: https://images.hdqwalls.com/download/black-ford-mustang-4k-2020-e7-1920x1080.jpg
+* Picture on home page: https://www.freepik.com/premium-photo/car-lifting-equipment-garage-being-repair-fix_5034140.htm
+* Hero image/services page: https://unsplash.com/photos/oNnl9IYzbug
+* Image on services page: https://www.pexels.com/photo/mechanic-checking-the-engine-of-a-car-6870313/
 
 The color scheme was inspired by these HTML template design: 
 (https://creativemarket.com/etheme2/2938419-Car-Repair-Service-HTML-Template?u=ohlove&epik=dj0yJnU9SWlrRHhZOFctOENiQlBwaUN5MTd3YmU3Um1IZ0JiOGQmcD0wJm49M2JlSllfdGxQQjlsUXZTTzNrSGo1USZ0PUFBQUFBR1BnMUo4)
