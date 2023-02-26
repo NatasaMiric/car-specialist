@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>My bookings</h1>
-
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">My bookings</h1>
+</div>
+<div class="container">
 <table class="table">
     {% for booking in bookings %}
         <tr>
@@ -15,12 +17,15 @@
             <tr><td class="table-warning">Your booking is being processed. We will soon get in touch with you!</td></tr>           
             {% endif %}
             <td>
-                <a href="{% url 'edit_booking' booking.pk %}"><button>Edit</button></a>
+                <a href="{% url 'edit_booking' booking.pk %}"><button class="btn btn-dark">Edit</button></a>                
+            </td>
+            <td>
+                <a href="{% url 'delete_booking' booking.pk %}"><button class="btn btn-warning">Delete</button></a>
             </td>
         </tr>
     {% empty %}
     <tr><td class="table-danger">You have no bookings</td></tr>
     {% endfor %}
 </table>
-
+</div>
 {% endblock%}
