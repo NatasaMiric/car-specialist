@@ -1,17 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime
+from django.urls import reverse
 
 SERVICE_TYPE = (
     ('Vehicle Diagnostics', 'Vehicle Diagnostics'),
-    ('Starting and charging system repairs', 'Starting and charging system repairs'),
+    ('Starting and charging system repairs', 'Starting and charging system \
+    repairs'),
     ('Replacement of light bulbs', 'Replacement of light bulbs'),
     ('AC service', 'AC service'),
     ('Clutch replacement', 'Clutch replacement'),
-    ('Cambelt repair', 'Cambelt repair'),
+    ('Cambelt replacement', 'Cambelt replacement'),
     ('Basic service', 'Basic service'),
     ('Big service', 'Big service'),
-    ('Electronic systems repair', 'Electronic systems repair'),
+    ('Electrical systems repair', 'Electrical systems repair'),
     ('Tire change and repair', 'Tire change and repair')
 )
 
@@ -44,3 +46,6 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.user} | day: {self.day} | time: {self.time}"
+
+    def get_absolute_url(self):
+        return reverse('mybookings')

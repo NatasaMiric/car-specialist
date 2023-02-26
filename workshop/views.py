@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from django.views.generic.edit import CreateView
+from django.views.generic import CreateView, UpdateView
 from .models import Booking
 from .forms import BookingForm
 
@@ -14,7 +14,6 @@ class HomePage(View):
 class BookingView(CreateView):
     form_class = BookingForm
     template_name = 'booking.html'
-    context = {}
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
@@ -26,11 +25,29 @@ class BookingView(CreateView):
             new_form = form.save(commit=False)
             new_form.user = request.user
             new_form.save()
-            return redirect('home')
+            return redirect('mybookings')
         else:
             print(form.errors)
 
         return render(request, self.template_name, {'form': form})
+
+
+class MyBookingsPage(View):
+
+    def get(self, request):
+        user = request.user
+        bookings = Booking.objects.filter(user=user).order_by('day', 'time')
+        context = {
+            'user': user,
+            'bookings': bookings,
+        }
+        return render(request, 'mybookings.html', context)
+
+
+class UpdateBooking(UpdateView):
+    model = Booking
+    form_class = BookingForm
+    template_name = 'edit_booking.html'
 
 
 class ServicesPage(View):

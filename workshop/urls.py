@@ -5,4 +5,6 @@ urlpatterns = [
     path('', views.HomePage.as_view(), name='home'),
     path('booking/', views.BookingView.as_view(), name='booking'),
     path('services/', views.ServicesPage.as_view(), name='services'),
+    path('mybookings/', views.MyBookingsPage.as_view(), name='mybookings'),
+    path('edit_booking/<int:pk>/', views.UpdateBooking.as_view(), name='edit_booking'),
 ]
