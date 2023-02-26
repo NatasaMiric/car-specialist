@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
+from django.urls import reverse_lazy
 
 
 class HomePage(View):
@@ -48,6 +49,12 @@ class UpdateBooking(UpdateView):
     model = Booking
     form_class = BookingForm
     template_name = 'edit_booking.html'
+
+
+class DeleteBooking(DeleteView):
+    model = Booking
+    template_name = 'delete_booking.html'
+    success_url = reverse_lazy('home')
 
 
 class ServicesPage(View):
