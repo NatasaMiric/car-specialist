@@ -2,7 +2,6 @@ body {
     font-family: Roboto,sans-serif;    
 }
 
-
 p {
     font-size: 120%;
 }
@@ -14,12 +13,11 @@ p {
     margin-left: 1rem;
 }
 
-
-.btn-warning {
+.btn-book {
     background-color: #fae000;
 }
 
-.btn-warning:hover {
+.btn-book:hover {
     color: white;
     background:transparent;
 }
@@ -42,7 +40,6 @@ p {
 .page-section {
     padding: 2rem;
 }
-
 
 .about-section {
     line-height: 45px;
@@ -67,4 +64,13 @@ p {
 
 .fa-check {
     color: #fae000;
+}
+
+.btn-access {
+    background-color: #fae000;
+}
+
+.btn-access:hover {
+    background-color: #2b3035;
+    color: white;
 }

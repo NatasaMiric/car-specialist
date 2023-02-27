@@ -37,7 +37,8 @@ class MyBookingsPage(View):
 
     def get(self, request):
         user = request.user
-        bookings = Booking.objects.filter(user=user).order_by('day', 'time')
+        bookings = Booking.objects.filter(user=self.request.user).order_by(
+         ('day', 'time'))
         context = {
             'user': user,
             'bookings': bookings,

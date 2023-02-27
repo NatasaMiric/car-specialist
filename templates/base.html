@@ -27,10 +27,10 @@
     <div class="container-fluid bg-dark">
         <div class="row py-2 align-items-center">
             <div class="col col-sm-10 text-left">
-                <span class="text-white-50">Opening hours: Monday-Friday 7:00am-4:00pm</span>
+                <span class="text-white">Opening hours: Monday-Friday 7:00am-4:00pm</span>
             </div>
             <div class="col col-sm-2 text-center">
-                <a href="{% url 'booking' %}" class="btn btn-warning btn-sm"><span>Book Now</span></a>
+                <a href="{% url 'booking' %}" class="btn btn-warning btn-sm btn-book"><span>Book Now</span></a>
             </div>
         </div>
     </div>
@@ -49,6 +49,7 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'services' %}">Services</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item dropdown mr-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -58,13 +59,21 @@
                             <li><a class="dropdown-item" href="{% url 'booking' %}">Book a service</a></li>
                             <li><a class="dropdown-item" href="{% url 'mybookings' %}">My bookings</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="#">Register/Sign In</a>
-                    </li>
+                    </li>                    
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="#">Contact Us</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

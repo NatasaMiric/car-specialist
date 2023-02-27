@@ -4,8 +4,8 @@
 <div class="container" style="max-width:600px">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Book a service</h1>
-
     </div>
+    {% if user.is_authenticated %}
     <div class="py-5">
         <div class="row">
             <div class="col-12">
@@ -14,12 +14,16 @@
                         {% csrf_token %}
                         {{ form.as_p }}
                         <p>
-                            <button type="submit" class="btn btn-warning">Book</button>
+                            <button type="submit" class="btn btn-access">Book</button>
                         </p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    {% else %}
+    <p>To book a service, please <a class="link" href="{% url 'account_login' %}">log in</a>. If you have not created an account yet, then <a class="link" href="{% url 'account_signup' %}">sign up</a>
+        first.</p>
+    {% endif %}
 </div>
 {% endblock %}
