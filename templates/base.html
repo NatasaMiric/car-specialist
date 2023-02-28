@@ -22,19 +22,19 @@
     <title>Car Specialist</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark d-none d-lg-block">
         <div class="row py-2 align-items-center">
-            <div class="col col-sm-10 text-left">
-                <span class="text-white">Opening hours: Monday-Friday 7:00am-4:00pm</span>
+            <div class="col col-sm-10 text-left text-white">
+                <span class="nav-hours">Opening hours: Monday-Friday 7:00am-4:00pm</span>
             </div>
-            <div class="col col-sm-2 text-center">
-                <a href="{% url 'booking' %}" class="btn btn-warning btn-sm btn-book"><span>Book Now</span></a>
+            <div class="col col-sm-2 text-end">
+                <a href="{% url 'booking' %}" class="btn btn-book btn-sm"><span>Book Now</span></a>
             </div>
         </div>
     </div>
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">Car Specialist</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -49,6 +49,9 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'services' %}">Services</a>
                     </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item dropdown mr-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -59,10 +62,7 @@
                             <li><a class="dropdown-item" href="{% url 'booking' %}">Book a service</a></li>
                             <li><a class="dropdown-item" href="{% url 'mybookings' %}">My bookings</a></li>
                         </ul>
-                    </li>                    
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
@@ -86,7 +86,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white" style="background-color: #131313">
+    <footer class="text-center text-lg-start text-white mt-auto" style="background-color: #131313">
         <div class="container p-4 pb-0">
             <section class="">
                 <div class="row">

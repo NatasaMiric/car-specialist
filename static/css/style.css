@@ -3,16 +3,26 @@ body {
 }
 
 p {
-    font-size: 120%;
+    font-size: 110%;
 }
 
+/* Navbar starts */
 .navbar-brand {
     font-family: 'Racing Sans One', sans-serif;
-    font-size: 150%;
+    font-size: 160%;
     color: #fae000;
     margin-left: 1rem;
 }
 
+.nav-hours {
+    font-size: 85%;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Hero section  */
 .btn-book {
     background-color: #fae000;
 }
@@ -22,18 +32,16 @@ p {
     background:transparent;
 }
 
-.nav-item:hover {
-    text-decoration: underline;
-}
-
 .hero {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+/* Home page sections */
+
 .section-heading {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -45,15 +53,20 @@ p {
     line-height: 45px;
 }
 
-.fa-check-circle{
-    color: #fae000;   
+.fa-check-circle {
+    color: #fae000;
+    margin-right: 0.5rem;    
 }
-
 
 .btn-read-more {
     margin-top: 2em;
 }
 
+.fa-check {
+    color: #fae000;    
+}
+
+/* Footer */
 .link {
     text-decoration: none;
 }
@@ -62,9 +75,7 @@ p {
     text-decoration: underline;
 }
 
-.fa-check {
-    color: #fae000;
-}
+
 
 .btn-access {
     background-color: #fae000;
@@ -74,3 +85,4 @@ p {
     background-color: #2b3035;
     color: white;
 }
+
