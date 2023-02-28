@@ -6,7 +6,7 @@ p {
     font-size: 110%;
 }
 
-/* Navbar starts */
+/* Navbar */
 .navbar-brand {
     font-family: 'Racing Sans One', sans-serif;
     font-size: 160%;
@@ -23,14 +23,6 @@ p {
 }
 
 /* Hero section  */
-.btn-book {
-    background-color: #fae000;
-}
-
-.btn-book:hover {
-    color: white;
-    background:transparent;
-}
 
 .hero {
     background-repeat: no-repeat;
@@ -53,17 +45,16 @@ p {
     line-height: 45px;
 }
 
+/* Fontawesome Icons */
+
 .fa-check-circle {
     color: #fae000;
     margin-right: 0.5rem;    
 }
 
-.btn-read-more {
-    margin-top: 2em;
-}
-
 .fa-check {
-    color: #fae000;    
+    color: #06b3f8ef;
+    margin-right: 1rem;    
 }
 
 /* Footer */
@@ -75,7 +66,20 @@ p {
     text-decoration: underline;
 }
 
+/* Buttons */
 
+.btn-book {
+    background-color: #fae000;
+}
+
+.btn-book:hover {
+    color: white;
+    background:transparent;
+}
+
+.btn-read-more {
+    margin-top: 2em;
+}
 
 .btn-access {
     background-color: #fae000;

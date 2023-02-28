@@ -192,6 +192,11 @@ Content for the website was taken from:
 * https://www.johanssoncarservice.se/bilverkstad-stockholm-sodermalm/
 * https://preview.themeforest.net/item/car-service-mechanic-auto-shop-wordpress-theme/full_screen_preview/12777824?_ga=2.233172310.978326925.1675884526-1535900306.1675677744
 
+
+* Solution on how to make the footer stay on the bottom of the page: 
+(https://radu.link/make-footer-stay-bottom-page-bootstrap/)
+
+
 ### Media
 
 Photos were taken from: 

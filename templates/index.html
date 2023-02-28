@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<!-- Hero image -->
 <header>
     <div class="bg-dark bg-image hero" style="background-image: url('{% static 'img/hero.jpg' %}')">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);min-height: 350px;">
@@ -17,11 +18,12 @@
     </div>
     </div>
 </header>
-<!-- Services-->
+
+<!--Our Services-->
 <section class="page-section">
     <div class="container">
         <div class="row text-center">
-            <h2 class="section-heading text-capitalize">Our Services</h2>            
+            <h2 class="section-heading text-capitalize">Our Services</h2>
         </div>
         <div class="row text-center">
             <div class="col-md-4">
@@ -93,4 +95,4 @@
     </div>
 </section>
 
-{%endblock%}
+{% endblock %}
