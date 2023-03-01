@@ -4,7 +4,7 @@ from django.views.generic import CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
 from django.urls import reverse_lazy
-from django.http import HttpResponse
+
 
 class HomePage(View):
 
@@ -34,18 +34,19 @@ class BookingView(CreateView):
 
 
 class MyBookingsPage(View):
-    
-    def get(self, request):        
+
+    def get(self, request):
         user = request.user
         if request.user.is_authenticated:
-            bookings = Booking.objects.filter(user=self.request.user).order_by('day', 'time')
+            bookings = (Booking.objects.filter(user=self.request.user).
+                        order_by('day', 'time'))
             context = {
                     'user': user,
                     'bookings': bookings,
             }
-            return render(request, 'mybookings.html', context)  
+            return render(request, 'mybookings.html', context)
         else:
-            return render(request, 'account/login.html')            
+            return render(request, 'account/login.html')
 
 
 class UpdateBooking(UpdateView):

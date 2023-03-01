@@ -45,6 +45,12 @@ p {
     line-height: 45px;
 }
 
+/* My bookings page */
+
+.bookings-container {
+    margin-bottom: 250px;
+}
+
 /* Fontawesome Icons */
 
 .fa-check-circle {
@@ -74,7 +80,7 @@ p {
 
 .btn-book:hover {
     color: white;
-    background:transparent;
+    border-color: #fae000;
 }
 
 .btn-read-more {
@@ -82,7 +88,7 @@ p {
 }
 
 .btn-access {
-    background-color: #fae000;
+    background-color: #fae000;    
 }
 
 .btn-access:hover {
@@ -90,3 +96,11 @@ p {
     color: white;
 }
 
+.btn-edit:hover {
+    color: black;
+    background-color: white;
+}
+
+.btn-delete:hover {
+    color: black;
+}
