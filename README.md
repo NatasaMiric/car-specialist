@@ -60,7 +60,7 @@ Wireframes were created for the desktop and the mobile devices. Each page is ind
 
 The color scheme is chosen based on some car service website designs founded on [Pinterest](https://www.pinterest.com/pin/163537030209768423/) that seemed suitable for the website theme.
 
-![Color Scheme](docs/images/colorscheme.png)
+![Color Scheme](docs/images/colorscheme.jpeg)
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following fonts: 
@@ -192,10 +192,10 @@ Content for the website was taken from:
 * https://www.johanssoncarservice.se/bilverkstad-stockholm-sodermalm/
 * https://preview.themeforest.net/item/car-service-mechanic-auto-shop-wordpress-theme/full_screen_preview/12777824?_ga=2.233172310.978326925.1675884526-1535900306.1675677744
 
-
+* Footer example borrowed from: https://mdbootstrap.com/docs/standard/navigation/footer/
 * Solution on how to make the footer stay on the bottom of the page: 
 (https://radu.link/make-footer-stay-bottom-page-bootstrap/)
-
+* Solution on how to make alert message for class based view-DeleteView : https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown?noredirect=1&lq=1
 
 ### Media
 
