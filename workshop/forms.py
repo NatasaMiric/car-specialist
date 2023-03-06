@@ -20,3 +20,19 @@ class BookingForm(forms.ModelForm):
                                       'placeholder': 'Describe your case here'}
                                       )
         }
+
+
+class ContactForm(forms.Form):
+
+    first_name = forms.CharField(widget=forms.TextInput(
+        attrs={'class': 'form-control', 'style': 'max-width: 300px;'}
+    ), max_length=50)
+    last_name = forms.CharField(widget=forms.TextInput(
+        attrs={'class': 'form-control', 'style': 'max-width: 300px;'}
+    ), max_length=50)
+    email_address = forms.EmailField(widget=forms.TextInput(
+        attrs={'class': 'form-control', 'style': 'max-width: 300px;'}
+    ), max_length=50)
+    message = forms.CharField(widget=forms.Textarea(
+        attrs={'class': 'form-control', 'style': 'max-width: 300px;'}
+    ), max_length=1000)
