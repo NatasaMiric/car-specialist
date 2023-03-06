@@ -56,7 +56,7 @@ class UpdateBooking(SuccessMessageMixin, UpdateView):
     model = Booking
     form_class = BookingForm
     template_name = 'edit_booking.html'
-    success_url = reverse_lazy('mybookings')       
+    success_url = reverse_lazy('mybookings')
     success_message = "Your booking was updated successfully"
 
 
@@ -82,7 +82,7 @@ class ContactPage(FormView):
     template_name = 'contact.html'
     success_url = reverse_lazy('success')
 
-    def form_valid(self, form): 
+    def form_valid(self, form):
         self.send_mail(form.cleaned_data)
         return super(ContactPage, self).form_valid(form)
 
