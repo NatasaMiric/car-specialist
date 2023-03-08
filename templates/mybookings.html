@@ -4,34 +4,31 @@
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">My bookings</h1>
     </div>
-    {% if user.is_authenticated %}
-        {% for booking in bookings %}
-            {% if not booking.approved %}
-                <div class="row lead text-center text-light bg-secondary mx-2 mb-3">
-                    <div class="col">Your booking is being processed. We will soon get in touch with you!</div>
+    <div class="row lead text-center mx-2 mb-3">
+        <div class="col">Your booking is not binding until we have approved it</div>
+    </div>
+    {% for booking in bookings %}        
+    <div class="row">
+        <div class="col">
+            <div class="card mb-4 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ booking.service_type }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ booking.day }}</h6>
+                    <p class="card-text">{{ booking.time }}</p>
+                    <p class="card-text">{{ booking.approved|yesno:"Approved, Not Approved" }}</p>
+                    <a href="{% url 'edit_booking' booking.pk %}" class="card-link"><button
+                            class="btn btn-edit btn-dark">Edit</button></a>
+                    <a href="{% url 'delete_booking' booking.pk %}" class="card-link"><button
+                            class="btn btn-book btn-delete">Delete</button></a>
                 </div>
-            {% else %}
-                <div class="row">
-                    <div class="col">
-                        <div class="card mb-4 w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ booking.service_type }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">{{ booking.day }}</h6>
-                                <p class="card-text">{{ booking.time }}</p>
-                                <a href="{% url 'edit_booking' booking.pk %}" class="card-link"><button
-                                        class="btn btn-edit btn-dark">Edit</button></a>
-                                <a href="{% url 'delete_booking' booking.pk %}" class="card-link"><button
-                                        class="btn btn-book btn-delete">Delete</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-    {% empty %}
-        <div class="row text-center lead text-light bg-secondary mx-2">
-            <div class="col">You have no bookings</div>
+            </div>
         </div>
-        {% endfor %}
-    {% endif %}
+    </div>   
+    {% empty %}
+    <div class="row text-center lead text-light bg-secondary mx-2">
+        <div class="col">You have no bookings</div>
+    </div>
+    {% endfor %}
+
 </div>
 {% endblock%}

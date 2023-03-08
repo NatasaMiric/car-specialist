@@ -60,7 +60,8 @@ Wireframes were created for the desktop and the mobile devices. Each page is ind
 
 The color scheme is chosen based on some car service website designs founded on [Pinterest](https://www.pinterest.com/pin/163537030209768423/) that seemed suitable for the website theme.
 
-![Color Scheme](docs/images/colorscheme.jpeg)
+[Color Scheme](docs/images/colorscheme.jpeg)
+
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following fonts: 
