@@ -53,6 +53,7 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item dropdown mr-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -63,6 +64,11 @@
                             <li><a class="dropdown-item" href="{% url 'mybookings' %}">My bookings</a></li>
                         </ul>
                     </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'booking' %}">Book a service</a>
+                    </li>
+                    {% endif %}
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>

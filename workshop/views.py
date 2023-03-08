@@ -7,6 +7,7 @@ from .forms import BookingForm, ContactForm
 from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class HomePage(View):
@@ -15,7 +16,7 @@ class HomePage(View):
         return render(request, 'index.html')
 
 
-class BookingView(CreateView):
+class BookingView(LoginRequiredMixin, CreateView):
     form_class = BookingForm
     template_name = 'booking.html'
 
@@ -36,7 +37,7 @@ class BookingView(CreateView):
         return render(request, self.template_name, {'form': form})
 
 
-class MyBookingsPage(View):
+class MyBookingsPage(LoginRequiredMixin, View):
 
     def get(self, request):
         user = request.user
@@ -52,7 +53,7 @@ class MyBookingsPage(View):
             return render(request, 'account/login.html')
 
 
-class UpdateBooking(SuccessMessageMixin, UpdateView):
+class UpdateBooking(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Booking
     form_class = BookingForm
     template_name = 'edit_booking.html'
@@ -60,7 +61,7 @@ class UpdateBooking(SuccessMessageMixin, UpdateView):
     success_message = "Your booking was updated successfully"
 
 
-class DeleteBooking(DeleteView):
+class DeleteBooking(LoginRequiredMixin, DeleteView):
     model = Booking
     template_name = 'delete_booking.html'
     success_url = reverse_lazy('home')
