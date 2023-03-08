@@ -11,12 +11,17 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class HomePage(View):
-
+    """
+    View to render homepage.
+    """
     def get(self, request):
         return render(request, 'index.html')
 
 
 class BookingView(LoginRequiredMixin, CreateView):
+    """
+    View to render the booking page and data.
+    """
     form_class = BookingForm
     template_name = 'booking.html'
 
@@ -27,17 +32,36 @@ class BookingView(LoginRequiredMixin, CreateView):
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
+            if (check_duplicate_booking(request.user, request.POST['day'],
+                request.POST['time'],)):
+                form.add_error(None, 'Booking is not available for this time.')
+                return render(request, self.template_name, {'form': form})
             new_form = form.save(commit=False)
             new_form.user = request.user
             new_form.save()
             return redirect('mybookings')
         else:
-            print(form.errors)
-
+            form.add_error(None, 'The error occurred,please try again.')
         return render(request, self.template_name, {'form': form})
 
 
+def check_duplicate_booking(user, day, time, pk=None):
+    """
+    Function to prevent double bookings
+    """
+    if pk:
+        bookings = Booking.objects.filter(user=user, day=day,
+                                          time=time).exclude(id=pk)
+    else:
+        bookings = Booking.objects.filter(day=day, time=time)
+    if len(bookings):
+        return True
+
+
 class MyBookingsPage(LoginRequiredMixin, View):
+    """
+    View to render bookings that customer submited and data.
+    """
 
     def get(self, request):
         user = request.user
@@ -54,6 +78,9 @@ class MyBookingsPage(LoginRequiredMixin, View):
 
 
 class UpdateBooking(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    View to render edit booking page.
+    """
     model = Booking
     form_class = BookingForm
     template_name = 'edit_booking.html'
@@ -62,6 +89,9 @@ class UpdateBooking(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 
 class DeleteBooking(LoginRequiredMixin, DeleteView):
+    """
+    View to render delete page.
+    """
     model = Booking
     template_name = 'delete_booking.html'
     success_url = reverse_lazy('home')
@@ -73,25 +103,27 @@ class DeleteBooking(LoginRequiredMixin, DeleteView):
 
 
 class ServicesPage(View):
-
+    """
+    View to render services page.
+    """
     def get(self, request):
         return render(request, 'services.html')
 
 
 class ContactPage(FormView):
+    """
+    View to render contact page.
+    """
     form_class = ContactForm
     template_name = 'contact.html'
     success_url = reverse_lazy('success')
 
     def form_valid(self, form):
-        self.send_mail(form.cleaned_data)
         return super(ContactPage, self).form_valid(form)
-
-    def send_mail(self, valid_data):
-        # send mail logic
-        print(valid_data)
-        pass
 
 
 class SuccessView(TemplateView):
+    """
+    View to render success page.
+    """
     template_name = 'success.html'
