@@ -5,10 +5,8 @@ from django.views.generic import (CreateView, UpdateView, DeleteView, FormView,
 from .models import Booking
 from .forms import BookingForm, ContactForm
 from django.urls import reverse_lazy
-from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import get_object_or_404
 
 
 class HomePage(View):
@@ -38,7 +36,7 @@ class BookingView(LoginRequiredMixin, CreateView):
                 form.add_error(
                                 None,
                                 'Selected time is not available.'
-                                'Please choose another time.')
+                                ' Please choose another time')
                 return render(request, self.template_name, {'form': form})
             new_form = form.save(commit=False)
             new_form.user = request.user
@@ -70,8 +68,9 @@ class MyBookingsPage(LoginRequiredMixin, View):
     def get(self, request):
         user = request.user
         if request.user.is_authenticated:
-            bookings = (Booking.objects.filter(user=self.request.user).
-                        order_by('day', 'time'))
+            bookings = (Booking.objects.filter(user=self.request.user,
+                        approved=True).
+                        order_by('-created_on'))
             context = {
                     'user': user,
                     'bookings': bookings,
@@ -81,15 +80,14 @@ class MyBookingsPage(LoginRequiredMixin, View):
             return render(request, 'account/login.html')
 
 
-class UpdateBooking(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class UpdateBooking(LoginRequiredMixin, UpdateView):
     """
     View to render edit booking page.
     """
     model = Booking
     form_class = BookingForm
-    template_name = 'edit_booking.html'
+    template_name = 'update_booking.html'
     success_url = reverse_lazy('mybookings')
-    success_message = "Your booking was updated successfully"  
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST, instance=self.get_object())
@@ -100,15 +98,16 @@ class UpdateBooking(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
                                         )):
                 form.add_error(
                                 None,
-                                'Selected time is not available. '
-                                'Please choose another time.')
+                                'Selected time is not available.'
+                                ' Please choose another time')
                 return render(request, self.template_name, {'form': form})
-            form.save()            
+            form.save()
+            messages.success(request, 'Booking updated successfully')
             return redirect('mybookings')
         else:
             print(form.errors)
-        return render(request, self.template_name, {'form': form})         
-       
+        return render(request, self.template_name, {'form': form})
+
 
 class DeleteBooking(LoginRequiredMixin, DeleteView):
     """
