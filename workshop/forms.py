@@ -9,12 +9,9 @@ class BookingForm(forms.ModelForm):
 
         fields = ('phone_number', 'service_type', 'day', 'time', 'comment')
         widgets = {
-            'phone_number': forms.TextInput(attrs={'class': 'form-control',
-                                                   'style': 'max-width: 300px;'
-                                                   }),
-            'service_type': forms.Select(attrs={'class': 'form-control',
-                                                'style': 'max-width:300px;'}),
-            'day':  forms.NumberInput(attrs={'type': 'date'}),
+            'phone_number': forms.TextInput(attrs={'class': 'form-control'}),
+            'service_type': forms.Select(attrs={'class': 'form-control'}),
+            'day':  forms.DateInput(attrs={'class': 'form-control'}),
             'time': forms.Select(),
             'comment': forms.Textarea(attrs={'class': 'form-control',
                                       'placeholder': 'Describe your case here'}

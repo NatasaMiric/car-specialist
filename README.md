@@ -1,11 +1,9 @@
 # Car Specialist
 
-Car Specialist is a website that provides all the information about the car workshop. The site will be targeted towards the people who need the car repair services and it will deliver all necessary information about the range of services provided by the service as well as the possibility to book an appointment.
-
+Car Specialist is a website that provides all the information about the car workshop. The site will be targeted towards the people who need the car repair services and it will deliver all necessary information about the range of services provided by the service as well as the possibility to book, update and delete an appointment. To be able to do all this booking actions, customers will first need to create an account and log in.
 
 
 [Visit Car Specialist]()
-
 
 ## Table of Content
 
@@ -25,11 +23,6 @@ Car Specialist is a website that provides all the information about the car work
   * [Frameworks, Libraries & Programs](#Frameworks-Libraries-Programs) 
 
 * [Testing](#Testing)
-  * [Manual testing](#Manual-testing)
-  * [Validator Testing](#Validator-testing) 
-  * [Testing User Stories](#Testing-user-stories)
-  * [Bugs](#Bugs)
-
 
 * [Deployment](#Deployment)
 
@@ -71,7 +64,7 @@ The color scheme is chosen based on some car service website designs founded on 
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following fonts: 
-  * Racing Sans One for logo on the website.
+  * Racing Sans One for the logo on the website.
   * Roboto for the body text on the website. 
 
 ### Agile methodology
@@ -160,13 +153,8 @@ The color scheme is chosen based on some car service website designs founded on 
 
 
 ## Testing
-### Manual testing
-### Validator testing
-### Testing user Stories
-### Bugs
 
-* The submission of booking form did not work, it was not saved to database and it reported an error message about a field in the form. The error is fixed by removing the 'user' from the form fields and instead user data will be automatically retrieved when he loggs in.  
-
+  Testing document can be found [here](TESTING.md).
 
 ## Deployment
 

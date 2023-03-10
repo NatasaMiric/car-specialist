@@ -17,14 +17,13 @@
             <form method="POST">
                 {% csrf_token %}
                 <p class="text-center">
-                    <button type="submit" class="btn btn-access">Delete</button>
+                    <button type="submit" class="btn btn btn-book btn-delete">Delete</button>
                 </p>
             </form>
             <p class="text-center">
-                <a href="{% url 'mybookings' %}"><button type="submit" class="btn btn-dark">Back</button></a>
+                <a href="{% url 'mybookings' %}" class="btn btn-edit btn-dark">Back</a>
             </p>
         </div>
     </div>
-</div>
 </div>
 {% endblock %}
