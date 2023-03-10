@@ -14,9 +14,9 @@ h3 {
 /* Navbar */
 .navbar-brand {
     font-family: 'Racing Sans One', sans-serif;
-    font-size: 160%;
-    color: #fae000;
-    margin-left: 1rem;
+    font-size: 179%;
+    color: #fae000;    
+    text-shadow: 1px 1px 1px white;
 }
 
 .nav-hours {
