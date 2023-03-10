@@ -5,7 +5,7 @@
         <h1 class="display-4">My bookings</h1>
     </div>
     <div class="row lead text-center mx-2 mb-3">
-        <div class="col">Your booking is not binding until we have approved it</div>
+        <div class="col">Your booking will be displayed here after approval</div>
     </div>
     {% for booking in bookings %}        
     <div class="row">
@@ -16,7 +16,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{ booking.day }}</h6>
                     <p class="card-text">{{ booking.time }}</p>
                     <p class="card-text">{{ booking.approved|yesno:"Approved, Not Approved" }}</p>
-                    <a href="{% url 'edit_booking' booking.pk %}" class="card-link"><button
+                    <a href="{% url 'update_booking' booking.pk %}" class="card-link"><button
                             class="btn btn-edit btn-dark">Edit</button></a>
                     <a href="{% url 'delete_booking' booking.pk %}" class="card-link"><button
                             class="btn btn-book btn-delete">Delete</button></a>
