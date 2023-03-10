@@ -44,17 +44,23 @@ Car Specialist is a website that provides all the information about the car work
 
 Wireframes were created for the desktop and the mobile devices. Each page is individually presented for mobile and desktop screens in the following links.
 
-[Home page](docs/wireframes/homepage.png)
+[Home page](docs/wireframes/home.png)
 
-[Services page](docs/wireframes/servicespage.png)
+[Services page](docs/wireframes/services.png)
+
+[Contact page](docs/wireframes/contact.png)
 
 [Booking page](docs/wireframes/bookingpage.png)
 
-[My Bookings page](docs/wireframes/mybookingspage.png)
+[My Bookings page](docs/wireframes/mybookings.png)
 
-[Register/Sign In page](docs/wireframes/registerpage.png)
+[Update booking](docs/wireframes/updatebooking.png)
 
-[Contact page](docs/wireframes/contactpage.png)
+[Delete booking](docs/wireframes/deletebooking.png)
+
+[Register](docs/wireframes/register.png)
+
+[Login](docs/wireframes/login.png)
 
 ### Color Scheme
 
