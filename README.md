@@ -65,37 +65,93 @@ The color scheme is chosen based on some car service website designs founded on 
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following fonts: 
-  * Racing Sans One for the headings on the website.
+  * Racing Sans One for logo on the website.
   * Roboto for the body text on the website. 
 
 ### Agile methodology
 
 ## Features
 ### Existing features
+
+**Logo**
+
+  * It is featured on all three pages on website and fully responsive. It allow users to go back to home page by clicking on it. 
+
+**Navigation bar**
+
+  * It is featured on all three pages on website, fully responsive and it includes links to Home page, Services,Contact, Booking, Register and Login page.  
+  * Fixed on top of all three pages to allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via back button or scroll all the way up.
+  * Sorted out according to priority and it is consistent in style and color in order to enable easy navigation.
+  * In order to fit in one row, navigation links are in dropdown menu on smaller screen sizes while on larger screens there is a text. 
+  * On larger screens there is a row with a text above the navbar which contains information about opening time of the service and a link for booking a service. 
+
+**The Landing Page Image**
+
+  * The image is consistent with the theme and contains text that motivates people to use the services and has a button which leads to booking services. 
+
+**Our services section**
+  * Provides an insight of a type of services that the Car Specialist provides to customers. Each type of service is presented with the icon and a text. Below these icons is a link that leads to the page where the other services provided by the company are listed.
+  * On the larger screens icons are positioned in one row and on smaller screens one below the other.
+   
+**About Section**
+
+ * About section will allow users to find out some informations about the company and highlight its qualities, which should motivate the customers to choose this service.
+  
+**The Footer**
+
+  * It is featured on all three pages on website.
+  * The footer section includes a Car Specialist logo and again motivational description, useful links which lead to important pages of this webpage for the easier navigation, contact information and 
+  links to the relevant social media sites. The social links will open to a new tab to allow easy navigation for the user.
+  * The footer is valuable to the users as it provides a useful links and information, and encourages them to keep connected via social media where they can be constantly updated.
+
+**Services page**
+
+* Follows the style from the home page and it consists of the landing image as well. It contains the text which highlights the expertise and affordable prices. 
+* Below the landing image is the description and a full list of services which Car Specialist provides to the customers. 
+
+**Contact us page**
+* In the upper part of the page is a contact form where the user can send a message to the Car Specialist and contact information about adress, email, phone and opening times. 
+* In the lower part, there is a map which shows the (fictitious) location of the Car Specialist. 
+
+**Book a service or when the user is logged in -> Booking dropdown menu which contains: Book a service and My bookings page**
+
+* In case the user is not logged in, the page will show a sign in page which informs the user to sign in to be able to make a booking.
+* The logged in user has the access to a Booking form where she/he should fill out the details about phone number, choose a service type, day, time and describe the issue with the car.
+* All fields in the form are required and if any of them is omitted, a message is displayed. 
+* In case the user chooses an already occupied time, he receives a notification to choose another. 
+
+**Register page**
+
+* It allows the user to register an account. It is required that user writes username and password whereas the email is optional.
+* It is a necessery step if the user wants to make a booking.  
+
+**Login**
+
+* It allows the user to sign in to the account in order to be able to make a booking. 
+* It is a necessery step if the user wants to make a booking, update or delete booking. 
+
 ### Future features
 
 ## Technologies Used
-### Languages
 
-* Python version 3.8.11 - the main language used to build the back-end.
-* HTML- markup language used to build the front-end templates.
-* CSS- to style the content and provide the layout.
-
-### Frameworks-Libraries-Programs
-
-* Django - Python-based web framework that follows the model–template–views architectural pattern.
-* Cloudinary - for cloud-based image and video management services
-* PostreSQL - used as database management system
+* Python version 3.8.11 - the main language used to build the back-end
+* HTML- markup language used to build the front-end templates
+* CSS- to style the content and provide the layout
+* [Django](https://www.djangoproject.com/) - Python-based web framework that follows the model–template–views architectural pattern.
+* [Bootstrap 5.3](https://getbootstrap.com/) - for costomizing the webpage and make it responsive
+* [Cloudinary](https://cloudinary.com/) - for cloud-based image and video management services
+* [PostreSQL](https://www.postgresql.org/) - used as database management system
 * GitHub - project repository
 * Gitpod - version control
 * Heroku - cloud platform for deployment, managemant, and scaling the app
-* ElephantSQL - PostgreSQL database hosting service.
+* [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service.
 * Code Institute GitPod Full Template - Using the GitPod Full Template from the Code Institute for my project.
 * [Font Awesome](https://fontawesome.com/)- used for importing the icons.
 * [Tiny PNG](https://tinypng.com/)- was used to compress images.
-* Balsamiq- was used to create wireframes.
+* [Balsamiq](https://balsamiq.com/)- was used to create wireframes.
 * [Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
 * Google Dev Tools - to troubleshoot and test features, solve issues with responsiveness and styling
+
 
 ## Testing
 ### Manual testing
