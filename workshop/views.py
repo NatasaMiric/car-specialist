@@ -68,8 +68,7 @@ class MyBookingsPage(LoginRequiredMixin, View):
     def get(self, request):
         user = request.user
         if request.user.is_authenticated:
-            bookings = (Booking.objects.filter(user=self.request.user,
-                        approved=True).
+            bookings = (Booking.objects.filter(user=self.request.user).
                         order_by('-created_on'))
             context = {
                     'user': user,
