@@ -152,6 +152,14 @@ the user will be redirected to the page which will present all booking details a
 
 ### Future features
 
+* Improve handling of the booking system.
+* Email confirmations for the created,updated and deleted booking.
+* Enable sending the mail to the user with notification about his booking changes
+* Add user reviews for services.
+* Implement Social login.
+* Improve UX , add more content
+
+
 ## Technologies Used
 
 * Python version 3.8.11 - the main language used to build the back-end
