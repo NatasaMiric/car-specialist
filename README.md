@@ -29,7 +29,8 @@ Car Specialist is a website that provides all the information about the car work
 * [Credits](#Credits)
     * [Content](#Content)
     * [Media](#Media)
-    
+
+* [Acknowledgments](#Acknowledgments)
 ----------------------------
 ## UX
 ### User Stories          
@@ -154,7 +155,7 @@ the user will be redirected to the page which will present all booking details a
 
 * Improve handling of the booking system.
 * Email confirmations for the created,updated and deleted booking.
-* Enable sending the mail to the user with notification about his booking changes
+* Enable sending the mail to the user in contact form
 * Add user reviews for services.
 * Implement Social login.
 * Improve UX , add more content
@@ -162,10 +163,19 @@ the user will be redirected to the page which will present all booking details a
 
 ## Technologies Used
 
+### Languages Used
+
 * Python version 3.8.11 - the main language used to build the back-end
 * HTML- markup language used to build the front-end templates
 * CSS- to style the content and provide the layout
+
+### Frameworks, Libraries & Programs
+
 * [Django](https://www.djangoproject.com/) - Python-based web framework that follows the model–template–views architectural pattern.
+* Django Allauth - used for authentication, registration & account management.
+* [gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
+* [dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
+* [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
 * [Bootstrap 5.3](https://getbootstrap.com/) - for customizing the webpage and making it responsive
 * [Cloudinary](https://cloudinary.com/) - for cloud-based image and video management services
 * [PostgreSQL](https://www.postgresql.org/) - used as a database management system
@@ -178,7 +188,7 @@ the user will be redirected to the page which will present all booking details a
 * [Tiny PNG](https://tinypng.com/)- was used to compress images.
 * [Balsamiq](https://balsamiq.com/)- was used to create wireframes.
 * [Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
-* Google Dev Tools - to troubleshoot and test features, solve issues with responsiveness and styling
+* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - to troubleshoot and test features, solve issues with responsiveness and styling
 
 
 ## Testing
@@ -289,3 +299,8 @@ Photos were taken from:
 The color scheme was inspired by these HTML template design: 
 (https://creativemarket.com/etheme2/2938419-Car-Repair-Service-HTML-Template?u=ohlove&epik=dj0yJnU9SWlrRHhZOFctOENiQlBwaUN5MTd3YmU3Um1IZ0JiOGQmcD0wJm49M2JlSllfdGxQQjlsUXZTTzNrSGo1USZ0PUFBQUFBR1BnMUo4)
 
+## Acknowledgments
+
+* My family for their patience and support
+* My Code Institute mentor Rohit Sharma
+* The Code Institute Tutors and Slack community who assisted me with troubleshooting.
