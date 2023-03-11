@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.views.generic import (CreateView, UpdateView, DeleteView, FormView,
                                   TemplateView)
@@ -42,14 +42,12 @@ class BookingView(LoginRequiredMixin, CreateView):
             new_form.user = request.user
             new_form.save()
             return redirect('mybookings')
-        else:
-            print(form.errors)
         return render(request, self.template_name, {'form': form})
 
 
 def check_duplicate_booking(user, day, time, pk=None):
     """
-    Function to prevent double bookings
+    Function to prevent same time bookings
     """
     if pk:
         bookings = Booking.objects.filter(user=user, day=day,
@@ -62,7 +60,7 @@ def check_duplicate_booking(user, day, time, pk=None):
 
 class MyBookingsPage(LoginRequiredMixin, View):
     """
-    View to render bookings that customer submited and data.
+    View to render bookings that customer submited and it's data.
     """
 
     def get(self, request):
@@ -100,12 +98,16 @@ class UpdateBooking(LoginRequiredMixin, UpdateView):
                                 'Selected time is not available.'
                                 ' Please choose another time')
                 return render(request, self.template_name, {'form': form})
-            form.save()
+            booking = form.save()
+            booking.approved = False
+            booking.save()
             messages.success(request, 'Booking updated successfully')
             return redirect('mybookings')
-        else:
-            print(form.errors)
         return render(request, self.template_name, {'form': form})
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(Booking, pk=self.kwargs.get("pk"),
+                                 user=self.request.user)
 
 
 class DeleteBooking(LoginRequiredMixin, DeleteView):
@@ -120,6 +122,10 @@ class DeleteBooking(LoginRequiredMixin, DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteBooking, self).delete(request, *args, **kwargs)
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(Booking, pk=self.kwargs.get("pk"),
+                                 user=self.request.user)
 
 
 class ServicesPage(View):
@@ -147,3 +153,13 @@ class SuccessView(TemplateView):
     View to render success page.
     """
     template_name = 'success.html'
+
+
+def handler404(request, exception):
+    """
+    Creates custom 404 error page
+    """
+    context = {}
+    response = render(request, "404.html", context=context)
+    response.status_code = 404
+    return response

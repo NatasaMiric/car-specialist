@@ -3,7 +3,7 @@
 Car Specialist is a website that provides all the information about the car workshop. The site will be targeted towards the people who need the car repair services and it will deliver all necessary information about the range of services provided by the service as well as the possibility to book, update and delete an appointment. To be able to do all this booking actions, customers will first need to create an account and log in.
 
 
-[Visit Car Specialist]()
+[Visit Car Specialist](https://car-specialist.herokuapp.com/)
 
 ## Table of Content
 

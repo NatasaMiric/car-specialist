@@ -13,3 +13,6 @@ urlpatterns = [
     path('contact/', views.ContactPage.as_view(), name='contact'),
     path("success/", views.SuccessView.as_view(), name="success")
 ]
+
+
+handler404 = 'workshop.views.handler404'
