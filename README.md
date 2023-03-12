@@ -28,12 +28,25 @@ Car Specialist is a website that provides all the information about the car work
 
 * [Credits](#Credits)
     * [Content](#Content)
+    * [Code Used](#Code-Used)
     * [Media](#Media)
 
 * [Acknowledgments](#Acknowledgments)
 ----------------------------
 ## UX
-### User Stories          
+### User Stories  
+
+* As a registered user I can create a booking so that I can book the time for service
+* As a registered user I can choose service type from the list when creating a booking so that I have a better overview of all services provided in the workshop
+* As a registered user I can choose a time in my booking so that **I can choose a time when to drive my car to service that suits me best **
+* As a registered user I can edit my booking so that I can make necessary changes in booking details and change date, time or type of service that I want
+* As a registered user I can see my bookings so that I can remind myself and check booking details
+* As a registered user I can delete my booking so that I can cancel my booking
+* As a anonymous or registered user I can send a message through the website to the workshop so that I can get the information that I need
+* As an anonymous user I can register an account so that I can manage my bookings
+* As a registered user I can log in to my account so that manage my bookings
+* As an admin I can approve or disapprove bookings so that I can manage all the appointments
+
 ### Wireframes
 
 Wireframes were created for desktop and mobile devices. Each page is individually presented for mobile and desktop screens in the following links.
@@ -69,6 +82,10 @@ The color scheme is chosen based on some car service website designs founded on 
   * Roboto for the body text on the website. 
 
 ### Agile methodology
+
+Agile principles were used for project implementation and planning. Product backlog is presented on kanban board. Each user story is divided into one or more tasks that are marked with labels corresponding to the user story. MoSCoW prioritization was assigned to the product backlog. The goal was to present MVP that has necessary CRUD functionality. 
+
+[Agile board](https://github.com/users/NatasaMiric/projects/3/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Repository%22%5D)
 
 ## Features
 ### Existing features
@@ -172,23 +189,23 @@ the user will be redirected to the page which will present all booking details a
 ### Frameworks, Libraries & Programs
 
 * [Django](https://www.djangoproject.com/) - Python-based web framework that follows the model–template–views architectural pattern.
-* Django Allauth - used for authentication, registration & account management.
-* [gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
-* [dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
-* [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
-* [Bootstrap 5.3](https://getbootstrap.com/) - for customizing the webpage and making it responsive
-* [Cloudinary](https://cloudinary.com/) - for cloud-based image and video management services
-* [PostgreSQL](https://www.postgresql.org/) - used as a database management system
-* GitHub - project repository
-* Gitpod - version control
-* Heroku - cloud platform for deployment, management, and scaling of the app
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used for authentication, registration & account management.
+* [gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server.
+* [dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable.
+* [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database.
+* [Bootstrap 5.3](https://getbootstrap.com/) - for customizing the webpage and making it responsive.
+* [Cloudinary](https://cloudinary.com/) - for cloud-based image and video management services.
+* [PostgreSQL](https://www.postgresql.org/) - used as a database management system.
+* [GitHub](https://github.com/) - project repository.
+* [Gitpod](https://www.gitpod.io/) - version control.
+* [Heroku](https://www.heroku.com/) - cloud platform for deployment, management, and scaling of the app
 * [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service.
-* Code Institute GitPod Full Template - Using the GitPod Full Template from the Code Institute for my project.
 * [Font Awesome](https://fontawesome.com/)- used for importing the icons.
 * [Tiny PNG](https://tinypng.com/)- was used to compress images.
 * [Balsamiq](https://balsamiq.com/)- was used to create wireframes.
 * [Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
-* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - to troubleshoot and test features, solve issues with responsiveness and styling
+* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - to troubleshoot and test features, solve issues with responsiveness and styling.
+* Code Institute GitPod Full Template - Using the GitPod Full Template from the Code Institute for my project.
 
 
 ## Testing
@@ -198,7 +215,6 @@ the user will be redirected to the page which will present all booking details a
 ## Deployment
 
 The project is deployed using Heroku. To deploy the project:
-
 
 ### Step 1: Installing Django and supporting libraries in the terminal:
 
@@ -281,6 +297,8 @@ The sqlite3 database was used in the development, however, this is only availabl
 Content for the website was taken from: 
 * https://www.johanssoncarservice.se/bilverkstad-stockholm-sodermalm/
 * https://preview.themeforest.net/item/car-service-mechanic-auto-shop-wordpress-theme/full_screen_preview/12777824?_ga=2.233172310.978326925.1675884526-1535900306.1675677744
+
+### Code Used
 
 * Footer example borrowed from: https://mdbootstrap.com/docs/standard/navigation/footer/
 * Solution on how to make the footer stay on the bottom of the page: 
