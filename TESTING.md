@@ -114,6 +114,7 @@ Testing was also performed using the following browsers:
 | :--- | :--- | :--- | :--- | :--- |
 | **NAVBAR** |
 | Book Now button | Clicking on the button should take user to Book a service page | Clicked on book now button | Taken to the correct page | Pass |
+|  | When user hover over button, text should change the color to white and it shows yellow border around it  |  Hovered over button | Text changed color to white,border is present | Pass |
 | Logo | Clicking on the the logo should take user to home page | Clicked on logo | Taken to the correct page | Pass |
 |  | When user hovers over logo it should change color to white  | Hovered over logo | Logo changed color to white | Pass |
 | Home link | Loads the home page if clicked | Clicked home | Taken to the correct page | Pass |
@@ -136,26 +137,35 @@ Testing was also performed using the following browsers:
 | Footer Responsiveness | The footer sections should become stacked on smaller screens | Looked at site on smaller screens | Sections of footer became stacked | Pass |
 | **HOME PAGE** |
 | Book Now | When clicked on book now button in hero image it should take the user to the book a service page | Clicked on button | Opened correct page | Pass |
+|  | When user hover over button, text should change the color to white and it shows yellow border around it  |  Hovered over button | Text changed color to white,border is present | Pass |
 | Check out all our services | Check out all our services - when clicked on link it should take the user to services page | Clicked on button | Opened correct page | Pass |
+|  | When user hovers over button, text should change the color to white and backgorund to dark color  |  Hovered over button | Text changed color to white, background changed to dark color | Pass |
 | Our Services Responsiveness | Icons should become stacked on smaller screens |Looked at site on smaller screens| Icons became stacked | Pass |
 | Why choose us section | Text and image should become stacked on smaller screens | Looked at site on smaller screens |The section became stacked | Pass |
 | **SERVICES PAGE** |
 | Book Now button | Clicking on the button should take user to Book a service page | Clicked on book now button | Taken to the correct page | Pass |
+|  | When user hover over button, text should change the color to white and it shows yellow border around it  |  Hovered over button | Text changed color to white,border is present | Pass |
 | **CONTACT US PAGE** |
 | Form Validation | If the user doesn't fill in the required fields and tries to submit the form, they will be shown a tooltip letting them know they need to fill in the required fields | Submit the form without filling in the required fields | Tooltip lets me know which fields I need to fill in | Pass |
 | Send contact form | Once sent the user should be shown the page with a message thanking them | Fill in the contact form and clicked send. | Displays a thank you message | Pass |
+| Send button | When user hover over button, text should change the color to white  backgorund to dark color  |  Hovered over button | Text changed color to white, background changed to dark color | Pass |
 | **BOOKING** |
 | Booking form  | If the user doesn't fill in the required fields and tries to submit the form, they will be shown a tooltip letting them know they need to fill in the required fields | Submit the form without filling in the required fields | Tooltip lets me know which fields I need to fill in | Pass |
 |  | Clicking on the book button should take user to My booking page |Clicked on button | Opened correct page | Pass |
 | | User should get notification if he tries to book already occcupied time | Selected unavailable time | Got the warning | Pass |
 | Edit button | Clicking on the button should take user to update booking page | Clicked on edit button | Taken to correct page | Pass |
+|  | When user hovers over button, text should change the color to black, background color becomes white and black border is present  |  Hovered over button | Text changed color to black, background color is white and black border is present | Pass |
 | Delete button | Clicking on the button should take user to delete booking page | Clicked on delete button | Taken to correct page | Pass |
+|  | When user hovers over button background color becomes white and yellow border is present  |  Hovered over button | Text changed color to black, background color is white and yellow border is present | Pass |
 | Back button | Clicking on the button should take user to my bookings page | Clicked on back button | Taken to correct page | Pass |
 | Approved status | If the user updates the approved booking, then booking need to be approved again by admin  | Updated the booking | Booking waits for approval again | Pass |
 | **BUTTONS** |
 | Sign up| Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+|  | When user hovers over button, text should change the color to white and backgorund to dark color  |  Hovered over button | Text changed color to white, background changed to dark color | Pass |
 | Sign in | Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+|  | When user hovers over button, text should change the color to white and backgorund to dark color  |  Hovered over button | Text changed color to white, background changed to dark color | Pass |
 | Sign out | Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+|  | When user hovers over button, text should change the color to white and backgorund to dark color  |  Hovered over button | Text changed color to white, background changed to dark color | Pass |
 
 
 ## Bugs
