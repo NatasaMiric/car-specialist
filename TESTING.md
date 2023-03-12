@@ -1,14 +1,12 @@
 # TESTING
 
-* [Manual testing](#Manual-testing)
 * [Validator Testing](#Validator-testing)
     * [Lighthouse](#Lighthouse) 
-* [Testing User Stories](#Testing-user-stories)
+* [Manual testing](#Manual-testing)
+    * [Testing User Stories](#Testing-user-stories)
 * [Bugs](#Bugs)
 
 
-
-## Manual testing
 ## Validator testing
 
 The [W3C validator](https://validator.w3.org/) was used to validate all HTML pages and [Jigsaw](https://jigsaw.w3.org/css-validator/) to validate CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
@@ -34,6 +32,12 @@ The [W3C validator](https://validator.w3.org/) was used to validate all HTML pag
 
     * It passes the validation [CSS validation](docs/testing/validation/cssvalidation.png)
 
+* Python
+
+[Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python.
+
+    All pages are clear, no errors found. 
+
 ### Lighthouse
 
 I have used Googles Lighthouse testing to test the performance, accessibility, best practices and SEO of the site.
@@ -53,8 +57,6 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Login Page | ![ Login  Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogin.png) |
 | LogoutPage | ![ Logout Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogout.png) |
 
-
-
 * Mobile results
 
 | Page | Result |
@@ -70,8 +72,7 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Login Page | ![ Login  Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogin.png) |
 | LogoutPage | ![ Logout Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogout.png) |
 
-
-
+## Manual testing
 ## Testing User Stories
 
 | As a/an | I want to be able to ... | So that I can... | How is this achieved? | Evidence |
@@ -87,8 +88,12 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Anonymous user |  register an account  | manage my bookings | User should be able to find the register link in navbar and when he click on it he will see the sign up form where he should fill all required fields and click on Sign up | :---: |
 | Admin | approve or disapprove bookings | manage all the appointments| Admin should go to admin page,log in and he will see admin panel where he should be able to click on Bookings. On Bookings page should be listed all registered bookings and when the admin clicks on certain booking, he will see all the details and on the bottom is approved checkbox where he should click if he wants to approve the booking and then click save. There is also an option for approval above the booking list which gives possibility to select several bookings from the list and approve them in the same time by clicking on that empty field, click on approved and then click 'go' | :---: |
 
+
 ## Bugs
 
 ### Fixed Bugs
 
 * The submission of booking form did not work, it was not saved to database and it reported an error message about a field in the form. The error is fixed by removing the 'user' from the form fields and instead user data will be automatically retrieved when he loggs in.
+
+### Unfixed Bugs
+
