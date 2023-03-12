@@ -88,6 +88,75 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Anonymous user |  register an account  | manage my bookings | User should be able to find the register link in navbar and when he click on it he will see the sign up form where he should fill all required fields and click on Sign up | :---: |
 | Admin | approve or disapprove bookings | manage all the appointments| Admin should go to admin page,log in and he will see admin panel where he should be able to click on Bookings. On Bookings page should be listed all registered bookings and when the admin clicks on certain booking, he will see all the details and on the bottom is approved checkbox where he should click if he wants to approve the booking and then click save. There is also an option for approval above the booking list which gives possibility to select several bookings from the list and approve them in the same time by clicking on that empty field, click on approved and then click 'go' | :---: |
 
+### Full Testing
+
+Full testing was performed on the following devices:
+
+    Mobile:
+        Samsung Galaxy S10+
+        Samsung Galaxy S20 Ultra
+        iPhone 12 Pro
+        iPhone 6/7/8 Plus
+
+    Tablet:
+        iPad Pro   
+    Desktop
+        32 inch ultrawide Monitor
+
+Testing was also performed using the following browsers:
+
+   * Chrome
+   * FireFox
+   * Opera
+
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| :--- | :--- | :--- | :--- | :--- |
+| **NAVBAR** |
+| Book Now button | Clicking on the button should take user to Book a service page | Clicked on book now button | Taken to the correct page | Pass |
+| Logo | Clicking on the the logo should take user to home page | Clicked on logo | Taken to the correct page | Pass |
+|  | When user hovers over logo it should change color to white  | Hovered over logo | Logo changed color to white | Pass |
+| Home link | Loads the home page if clicked | Clicked home | Taken to the correct page | Pass |
+| Services link | Loads the services page if clicked |  Clicked services | Taken to the correct page | Pass |
+| Contact us link | Loads the contact page if clicked |  Clicked contact us | Taken to the correct page | Pass |
+| Book a service/Booking | If user is not logged in it should be Book a service link and if the user is logged in there is a Booking dropdown menu | Viewed links as a logged in and as a not logged in user | The correct links are displayed dependant on the users privileges| Pass |
+|  | User not logged in - when user clicks on Book a service it should take him to sign in page | Clicked on link | Taken to the correct page | Pass |
+|| User logged in- user should click on booking link and it should open dropdown menu with 2 options: book a service and my bookings  | Clicked on the link | Link works as expected | Pass |
+|  | User logged in- when user when user clicks on 'Book a service' it should take him to Book a service page where is a booking form  |Clicked on link | Taken to the correct page | Pass |
+|  | User logged in- when user when user clicks on 'My bookings' it should take him to My bookings page where are displayed all his bookings  | Clicked on link | Taken to the correct page | Pass |
+| Register | If user is not logged in, it should be displayed on navbar and when clicked on this link it should take user to Sign up page. Otherwise if user is logged in already it should not be shown on navbar | Tested as standard and logged in user. Clicked on link | The link is displayed according to the type of user and takes to the correct page | Pass |
+| Login | If user is not logged in, it should be displayed on navbar and when clicked on this link it should take user to Sign in page. Otherwise if user is logged in already it should not be shown on navbar and instead it only stands logout link | Tested as standard and logged in user. Clicked on link |  The link is displayed according to the type of user and takes to the correct page | Pass |
+| Logout | It should be displayed on navbar only if the user is logged in and clicking on it should take to sign out page | The link is displayed according to the type of user and takes to the correct page | Pass |
+| Navbar Responsiveness | Navbar should be displayed using a hamburger menu toggle on smaller screens | Checked the site on smaller screens | Navbar is displayed using a hamburger menu toggle | Pass |
+|  | Top line with opening time and a button should not be visible on smaller screens  | Checked the site on smaller screens | The line is not visible | Pass |
+| **FOOTER** |
+| Useful links | The links in the useful links section should open the correct page when clicked | Clicked each link | Taken to the correct page | Pass |
+| Social icons | Social Media Icons open the social page in a new browser tab | Clicked each icon | Social page opened in a new browser tab | Pass |
+| Bottom line (developed by:) | When clicked on Natasa Miric it should open a github profile in a new browser tab | Clicked on link | Opened correct page in a new tab | Pass |
+| Footer Responsiveness | The footer sections should become stacked on smaller screens | Looked at site on smaller screens | Sections of footer became stacked | Pass |
+| **HOME PAGE** |
+| Book Now | When clicked on book now button in hero image it should take the user to the book a service page | Clicked on button | Opened correct page | Pass |
+| Check out all our services | Check out all our services - when clicked on link it should take the user to services page | Clicked on button | Opened correct page | Pass |
+| Our Services Responsiveness | Icons should become stacked on smaller screens |Looked at site on smaller screens| Icons became stacked | Pass |
+| Why choose us section | Text and image should become stacked on smaller screens | Looked at site on smaller screens |The section became stacked | Pass |
+| **SERVICES PAGE** |
+| Book Now button | Clicking on the button should take user to Book a service page | Clicked on book now button | Taken to the correct page | Pass |
+| **CONTACT US PAGE** |
+| Form Validation | If the user doesn't fill in the required fields and tries to submit the form, they will be shown a tooltip letting them know they need to fill in the required fields | Submit the form without filling in the required fields | Tooltip lets me know which fields I need to fill in | Pass |
+| Send contact form | Once sent the user should be shown the page with a message thanking them | Fill in the contact form and clicked send. | Displays a thank you message | Pass |
+| **BOOKING** |
+| Booking form  | If the user doesn't fill in the required fields and tries to submit the form, they will be shown a tooltip letting them know they need to fill in the required fields | Submit the form without filling in the required fields | Tooltip lets me know which fields I need to fill in | Pass |
+|  | Clicking on the book button should take user to My booking page |Clicked on button | Opened correct page | Pass |
+| | User should get notification if he tries to book already occcupied time | Selected unavailable time | Got the warning | Pass |
+| Edit button | Clicking on the button should take user to update booking page | Clicked on edit button | Taken to correct page | Pass |
+| Delete button | Clicking on the button should take user to delete booking page | Clicked on delete button | Taken to correct page | Pass |
+| Back button | Clicking on the button should take user to my bookings page | Clicked on back button | Taken to correct page | Pass |
+| Approved status | If the user updates the approved booking, then booking need to be approved again by admin  | Updated the booking | Booking waits for approval again | Pass |
+| **BUTTONS** |
+| Sign up| Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+| Sign in | Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+| Sign out | Redirects to the home page if clicked and shows message success | Clicked on  button | Taken to correct page and displays the message | Pass |
+
 
 ## Bugs
 
@@ -97,3 +166,4 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 ### Unfixed Bugs
 
+* When updating the reservation, if the user wants to change something in the reservation, then he has to choose a new time also because otherwise it is not possible to finish the update. 
