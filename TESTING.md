@@ -46,16 +46,16 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 | Page | Result |
 | :--- | :--- |
-| Home Page | ![Home Desktop Lighthouse Testing](docs/testing/lighthouse/desktophome.png) |
-| Services Page | ![Services Desktop Lighthouse Testing](docs/testing/lighthouse/desktopservices.png) |
-| Contact Page | ![Contact Desktop Lighthouse Testing](docs/testing/lighthouse/desktopcontact.png) |
-| Book a service Page | ![ Book a service Desktop Lighthouse Testing](docs/testing/lighthouse/desktopbooking.png) |
-| My Bookings Page | ![ My Bookings Desktop Lighthouse Testing](docs/testing/lighthouse/desktopmybookings.png)|
-| Update Page | ![ Update Desktop Lighthouse Testing](docs/testing/lighthouse/desktopupdate.png) |
-| Delete Page | ![ Delete Desktop Lighthouse Testing](docs/testing/lighthouse/desktopdelete.png) |
-| Register Page | ![ Register Desktop Lighthouse Testing](docs/testing/lighthouse/desktopregister.png) |
-| Login Page | ![ Login  Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogin.png) |
-| LogoutPage | ![ Logout Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogout.png) |
+| Home Page | ![Home Page Desktop Lighthouse Testing](docs/testing/lighthouse/desktophome.png) |
+| Services Page | ![Services Page Desktop Lighthouse Testing](docs/testing/lighthouse/desktopservices.png) |
+| Contact Page | ![Contact Page Desktop Lighthouse Testing](docs/testing/lighthouse/desktopcontact.png) |
+| Book a service Page | ![Book a service Desktop Lighthouse Testing](docs/testing/lighthouse/desktopbooking.png) |
+| My Bookings Page | ![My Bookings Desktop Lighthouse Testing](docs/testing/lighthouse/desktopmybookings.png)|
+| Update Page | ![Update Desktop Lighthouse Testing](docs/testing/lighthouse/desktopupdate.png) |
+| Delete Page | ![Delete Desktop Lighthouse Testing](docs/testing/lighthouse/desktopdelete.png) |
+| Register Page | ![Register Desktop Lighthouse Testing](docs/testing/lighthouse/desktopregister.png) |
+| Login Page | ![Login  Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogin.png) |
+| LogoutPage | ![Logout Desktop Lighthouse Testing](docs/testing/lighthouse/desktoplogout.png) |
 
 * Mobile results
 
@@ -64,13 +64,13 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Home Page | ![Home Mobile Lighthouse Testing](docs/testing/lighthouse/mobilehome.png) |
 | Services Page | ![Services Mobile Lighthouse Testing](docs/testing/lighthouse/mobileservices.png) |
 | Contact Page | ![Contact Mobile Lighthouse Testing](docs/testing/lighthouse/mobilecontact.png) |
-| Book a service Page | ![ Book a service Mobile Lighthouse Testing](docs/testing/lighthouse/mobilepbooking.png) |
-| My Bookings Page | ![ My Bookings Mobile Lighthouse Testing](docs/testing/lighthouse/mobilemybookings.png)|
-| Update Page | ![ Update Mobile Lighthouse Testing](docs/testing/lighthouse/mobileupdate.png) |
-| Delete Page | ![ Delete Mobile Lighthouse Testing](docs/testing/lighthouse/mobiledelete.png) |
-| Register Page | ![ Register Mobile Lighthouse Testing](docs/testing/lighthouse/mobileregister.png) |
-| Login Page | ![ Login  Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogin.png) |
-| LogoutPage | ![ Logout Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogout.png) |
+| Book a service Page | ![Book a service Mobile Lighthouse Testing](docs/testing/lighthouse/mobilepbooking.png) |
+| My Bookings Page | ![My Bookings Mobile Lighthouse Testing](docs/testing/lighthouse/mobilemybookings.png)|
+| Update Page | ![Update Mobile Lighthouse Testing](docs/testing/lighthouse/mobileupdate.png) |
+| Delete Page | ![Delete Mobile Lighthouse Testing](docs/testing/lighthouse/mobiledelete.png) |
+| Register Page | ![Register Mobile Lighthouse Testing](docs/testing/lighthouse/mobileregister.png) |
+| Login Page | ![Login  Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogin.png) |
+| LogoutPage | ![Logout Mobile Lighthouse Testing](docs/testing/lighthouse/mobilelogout.png) |
 
 ## Manual testing
 ## Testing User Stories
