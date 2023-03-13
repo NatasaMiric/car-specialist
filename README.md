@@ -156,11 +156,14 @@ Agile principles were used for project implementation and planning. Product back
 ![](docs/images/ourservices2mobile.png)
 
 **Contact us page**
+
 * In the upper part of the page is a contact form where the user can send a message to the Car Specialist and contact information about address, email, phone, and opening times. 
 * In the lower part, there is a map that shows the (fictitious) location of the Car Specialist. 
+* After submiting the contact form, user gets the 'thank you' message. 
 
 ![](docs/images/contactdesktop.png)
 ![](docs/images/contactmobile.png)
+![](docs/images/contactsuccess.png)
 
 **Book a service or when the user is logged in -> Booking dropdown menu which contains: Book a service and My bookings page**
 
