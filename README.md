@@ -94,6 +94,8 @@ Agile principles were used for project implementation and planning. Product back
 
   * It is featured on all three pages on the website and is fully responsive. It allows users to go back to the home page by clicking on it. 
 
+  ![](docs/images/logo.png)
+
 **Navigation bar**
 
   * It is featured on all three pages on website, is fully responsive and includes links to Home page, Services, Contact, Booking, Register, and Login page.  
@@ -102,18 +104,36 @@ Agile principles were used for project implementation and planning. Product back
   * To fit in one row, navigation links are in the dropdown menu on smaller screen sizes while on larger screens there is text. 
   * On larger screens, there is a row with text above the navbar which contains information about the opening time of the service and a link for booking a service. 
 
+    ![](docs/images/navbardesktop.png)
+    ![](docs/images/navbar1desktop.png)
+    ![](docs/images/navbarmobile.png)
+    ![](docs/images/navbar1mobile.png)
+
 **The Landing Page Image**
 
   * The image is consistent with the theme and contains text that motivates people to use the services and has a button that leads to booking services. 
 
+  ![](docs/images/heromobile.png)
+  ![](docs/images/herodesktop.png)
+
+
 **Our services section**
+
   * Provides insight into the type of services that the Car Specialist provides to customers. Each type of service is presented with an icon and text. Below these icons is a link that leads to the page where the other services provided by the company are listed.
   * On the larger screens icons are positioned in one row and on smaller screens one below the other.
    
+    ![](docs/images/homepageouservicesdesktop.png)
+    ![](docs/images/homepageouservicesmobile.png)
+
+
 **About Section**
 
  * The about section will allow users to find out some information about the company and highlight its qualities, which should motivate the customers to choose this service.
   
+  ![](docs/images/aboutusdesktop.png)
+  ![](docs/images/aboutusmobile.png)
+  ![](docs/images/chooseusmobile.png)
+
 **The Footer**
 
   * It is featured on all three pages on website.
@@ -121,14 +141,26 @@ Agile principles were used for project implementation and planning. Product back
   links to relevant social media sites. The social links will open to a new tab to allow easy navigation for the user.
   * The footer is valuable to the users as it provides useful links and information, and encourages them to keep connected via social media where they can be constantly updated.
 
+  ![](docs/images/footerdesktop.png)
+  ![](docs/images/footermobile.png)
+
 **Services page**
 
 * Follows the style from the home page and it consists of the landing image as well. It contains text which highlights the expertise and affordable prices. 
 * Below the landing image is the description and a full list of services that Car Specialist provides to the customers. 
 
+![](docs/images/servicesherodesktop.png)
+![](docs/images/ourservicesdesktop.png)
+![](docs/images/servicesheromobile.png)
+![](docs/images/ourservicesmobile.png)
+![](docs/images/ourservices2mobile.png)
+
 **Contact us page**
 * In the upper part of the page is a contact form where the user can send a message to the Car Specialist and contact information about address, email, phone, and opening times. 
 * In the lower part, there is a map that shows the (fictitious) location of the Car Specialist. 
+
+![](docs/images/contactdesktop.png)
+![](docs/images/contactmobile.png)
 
 **Book a service or when the user is logged in -> Booking dropdown menu which contains: Book a service and My bookings page**
 
@@ -138,10 +170,16 @@ Agile principles were used for project implementation and planning. Product back
 * In case the user chooses an already occupied time, he receives a notification to choose another. 
 * Every booking needs to be approved by the admin to be valid.
 
+![](docs/images/bookaservicedesktop.png)
+![](docs/images/bookaservicemobile.png)
+
 **My Bookings Page**
 
 * It shows all the bookings that the user has requested and it provides booking details: type of service, day, time, and approval status.
 * On each booking, there is an option to update or delete the booking. 
+
+![](docs/images/mybookingsdesktop.png)
+![](docs/images/mybookingsmobile.png)
 
 **Update Booking Page**
 
@@ -149,6 +187,9 @@ Agile principles were used for project implementation and planning. Product back
 * If the user changes the booking, it needs to be approved by the admin again. 
 * After the changes have been made, the user will receive a success message.
 
+![](docs/images/updatedesktop.png)
+![](docs/images/updatemobile.png)
+![](docs/images/updatesuccess.png)
 
 **Delete Booking Page**
 
@@ -156,17 +197,33 @@ Agile principles were used for project implementation and planning. Product back
 the user will be redirected to the page which will present all booking details and will prompt the user if he is sure that he wants to delete it.
 * After the changes have been made, the user will receive a success message.
 
+![](docs/images/deletedesktop.png)
+![](docs/images/deletemobile.png)
+![](docs/images/deletesuccess.png)
+
 **Register page**
 
 * It allows the user to register an account. It is required that the user writes a username and password whereas the email is optional.
-* It is a necessary step if the user wants to make a booking. 
-* The user will receive a success message after registration. 
+* It is a necessary step if the user wants to make a booking.  
+
+![](docs/images/signup.png)
 
 **Login**
 
 * It allows the user to sign in to the account to be able to make a booking. 
 * It is a necessery step if the user wants to make a booking, update or delete a booking. 
 * The user will receive a success message after logging in.
+
+![](docs/images/signin.png)
+![](docs/images/signinsuccess.png)
+
+**Logout**
+
+* It allows the user to sign out from the page.
+* The user will receive a success message after logging out.
+
+![](docs/images/signout.png)
+![](docs/images/signoutsuccess.png)
 
 ### Future features
 
