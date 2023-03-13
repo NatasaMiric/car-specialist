@@ -3,13 +3,6 @@ body {
     background-color: #f5f5f5;
 }
 
-p {
-    font-size: 110%;
-}
-
-h3 {
-    font-size: 1.50rem;
-}
 
 /* Navbar */
 .navbar-brand {
@@ -44,10 +37,16 @@ h3 {
 
 .page-section {
     padding: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.page-section h3 {
+    font-size: 130%;
 }
 
 .about-section {
     line-height: 45px;
+    letter-spacing: 0.5px;
 }
 
 /* My bookings page */
@@ -124,7 +123,7 @@ footer {
 /* Contact page */
 
 .bg-contact {
-    background-color: #474747;
+    background-color: rgba(71, 71, 71, 0.7);
 }
 
 iframe {
