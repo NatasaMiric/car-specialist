@@ -341,11 +341,13 @@ The sqlite3 database was used in the development, however, this is only availabl
   DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`)
   33. Link file to the templates directory in Heroku `TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`
   34. Change the templates directory to TEMPLATES_DIR `TEMPLATES = [{…,'DIRS': [TEMPLATES_DIR], …,],},},]`
-  35. Add Heroku Hostname to ALLOWED_HOSTS `ALLOWED_HOSTS = ["carspeacialist.herokuapp.com", "localhost"]`  
+  35. Add Heroku Hostname to ALLOWED_HOSTS `ALLOWED_HOSTS = ["car-specialist.herokuapp.com", "localhost"]`  
   36. Create procfile on the top level directory (Gitpod) and add:`web: gunicorn carspecialist.wsgi`  
   37. Add, Commit and Push
   * Heroku
-  38. Deploy Content manually through Heroku (Github as deployment method,enable automatic deployments,deploy on main branch)
+  38. For final deployment set debug false, git add/commit/push
+  39. Remove COLLECT_STATIC FILES in config vars on Heroku
+  40. Deploy Content manually through Heroku (Github as deployment method,enable automatic deployments,deploy on main branch)
 
 
 ## Credits
