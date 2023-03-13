@@ -176,4 +176,4 @@ Testing was also performed using the following browsers:
 
 ### Unfixed Bugs
 
-* When updating the reservation, if the user wants to change something in the reservation, then he has to choose a new time also because otherwise it is not possible to finish the update. 
+* When updating the booking, if the user wants to change something in the booking, then he has to choose a new time also because otherwise it is not possible to finish the update. 

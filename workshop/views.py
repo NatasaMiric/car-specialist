@@ -79,7 +79,7 @@ class MyBookingsPage(LoginRequiredMixin, View):
 
 class UpdateBooking(LoginRequiredMixin, UpdateView):
     """
-    View to render edit booking page.
+    View to render update booking page.
     """
     model = Booking
     form_class = BookingForm
