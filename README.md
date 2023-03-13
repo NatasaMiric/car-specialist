@@ -57,7 +57,7 @@ Wireframes were created for desktop and mobile devices. Each page is individuall
 
 [Contact page](docs/wireframes/contact.png)
 
-[Booking page](docs/wireframes/bookingpage.png)
+[Booking page](docs/wireframes/booking.png)
 
 [My Bookings page](docs/wireframes/mybookings.png)
 
