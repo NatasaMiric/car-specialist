@@ -3,7 +3,7 @@
 Car Specialist is a website that provides all the information about the car workshop. The site will be targeted towards the people who need car repair services and it will deliver all necessary information about the range of services provided by the service as well as the possibility to book, update and delete an appointment. To be able to do all these booking actions, customers will first need to create an account and log in.
 
 
-[Visit Car Specialist](https://car-specialist.herokuapp.com/)
+[Visit Car Specialist](https://car-specialist.onrender.com)
 
 ## Table of Content
 
@@ -255,11 +255,11 @@ the user will be redirected to the page which will present all booking details a
 * [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database.
 * [Bootstrap 5.3](https://getbootstrap.com/) - for customizing the webpage and making it responsive.
 * [Cloudinary](https://cloudinary.com/) - for cloud-based image and video management services.
-* [PostgreSQL](https://www.postgresql.org/) - used as a database management system.
+* [PostgreSQL](https://www.postgresql.org/) - used as a database management system 
 * [GitHub](https://github.com/) - project repository.
 * [Gitpod](https://www.gitpod.io/) - version control.
-* [Heroku](https://www.heroku.com/) - cloud platform for deployment, management, and scaling of the app
-* [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service.
+* [Heroku](https://www.heroku.com/) - cloud platform for deployment, management, and scaling of the app. UPDATE 02.11.2024:Migrated to Render www.render.com
+* [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service. UPDATE 02.11.2024:Migrated to Neon www.neon.tech
 * [Font Awesome](https://fontawesome.com/)- used for importing the icons.
 * [Tiny PNG](https://tinypng.com/)- was used to compress images.
 * [Balsamiq](https://balsamiq.com/)- was used to create wireframes.
@@ -274,7 +274,8 @@ the user will be redirected to the page which will present all booking details a
 
 ## Deployment
 
-The project is deployed using Heroku. To deploy the project:
+The project is originally deployed using Heroku,but migrated to Render on 02.11.2024.
+To deploy the project to Heroku :
 
 ### Step 1: Installing Django and supporting libraries in the terminal:
 
